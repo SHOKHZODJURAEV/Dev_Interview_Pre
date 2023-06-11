@@ -7,11 +7,11 @@ public class firstNonRepeatingVowel {
         String value = "Google";
 
 
-        System.out.println(findFirstNonRepeatingVowel(value));
+         //System.out.println(findFirstNonRepeatingVowel(value));
 
     }
 
-    public static int findFirstNonRepeatingVowel(String target){
+    public int findFirstNonRepeatingVowel(String target){
         // first step make string to lowercase and store to char array
         char[] targetCharacters = target.toLowerCase().toCharArray();
         char[] vowelCharacters = {'a', 'e', 'i', 'o', 'u'};
