@@ -6,11 +6,11 @@ public class JadenCasingStrings {
 
     public static void main(String[] args) {
 
-        String sentance = "     how can   mirrors    be real if    our eyes   aren't   real     ";
+        String sentence = "     how can   mirrors    be real if    our eyes   aren't   real     ";
 
-        System.out.println(jadenSmithWritingStyle(sentance));
+       // System.out.println(jadenSmithWritingStyle(sentence));
     }
-    public static String jadenSmithWritingStyle(String words){
+    public String jadenSmithWritingStyle(String words){
         if(words.isEmpty()) return null;
         String result =  "";
         String[] arrayWords = words.toLowerCase().trim().split(" ");
