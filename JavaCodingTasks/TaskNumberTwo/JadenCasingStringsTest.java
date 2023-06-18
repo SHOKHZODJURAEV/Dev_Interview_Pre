@@ -1,19 +1,17 @@
 package TaskNumberTwo;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.*;
 
 class JadenCasingStringsTest {
 
     @Test
     void checkValidationJadenCasingStringTask(){
 
-        String sentence = "     how can   mirrors    be real if    our eyes   aren't   real     ";
-        JadenCasingStrings testObject = new JadenCasingStrings();
-        System.out.println(testObject.jadenSmithWritingStyle(sentence));
-
+        String actualResult = "     how can   mirrors    be real if    our eyes   aren't   real     ";
+        String expectedResult = "How Can Mirrors Be Real If Our Eyes Aren't Real";
+        Assertions.assertEquals(expectedResult, JadenCasingStrings.jadenSmithWritingStyle(actualResult));
 
     }
-
 }

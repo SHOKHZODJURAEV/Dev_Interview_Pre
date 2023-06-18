@@ -10,13 +10,16 @@ public class JadenCasingStrings {
 
        // System.out.println(jadenSmithWritingStyle(sentence));
     }
-    public String jadenSmithWritingStyle(String words){
+    public static String jadenSmithWritingStyle(String words){
         if(words.isEmpty()) return null;
-        String result =  "";
+       // StringBuilder result = new StringBuilder();
+        String result = "";
         String[] arrayWords = words.toLowerCase().trim().split(" ");
         for (String word : arrayWords){if (word.isEmpty()) continue;
-           result += word.toUpperCase().charAt(0) + word.substring(1)+" ";
+           //result.append(word.toUpperCase().charAt(0)).append(word.substring(1)).append(" ");
+            result += word.toUpperCase().charAt(0) + word.substring(1)+" ";
         }
-        return result;
+        //return result.toString().trim();
+        return result.trim();
     }
 }
