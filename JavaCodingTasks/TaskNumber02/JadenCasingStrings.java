@@ -1,6 +1,4 @@
-package TaskNumberTwo;
-
-import java.util.Locale;
+package TaskNumber02;
 
 public class JadenCasingStrings {
 

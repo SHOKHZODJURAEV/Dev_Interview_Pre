@@ -1,4 +1,4 @@
-package TaskNumberOne;
+package TaskNumber01;
 
 public class animalFeastTask {
 
